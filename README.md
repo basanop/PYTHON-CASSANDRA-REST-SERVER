@@ -32,12 +32,35 @@ This hosts an API server on port 8081.
 
 ## API Endpoints
 
-* /user
-* /users
-* /counts
-* /activity
-* /subscribe
-* /summary
+`/user`
+`/users`
+`/counts`
+`/activity`
+`/subscribe`
+`/summary`
+
+## API documentation
+REST APIs are documented in the code
+
+## Examples
+
+Find User by Id
+
+`POST 'http://localhost:8081/user' -d { 'id': 2 }`
+
+Find User By Email
+
+`POST 'http://localhost:8081/user'  -d { 'email': 'test@gmail.com'}`
+
+`POST 'http://localhost:8081/users' -d { 'city' : 'Seattle', company: 'Amazon' }`
+
+`POST 'http://localhost:8081/counts' -d { 'domain' : 'mail.ru', 'city': 'San Francisco' }`
+
+`POST 'http://localhost:8081/activity' -d {'date': '2017/03/02', company: 'Google' }`
+
+`POST 'http://localhost:8081/subscribe' -d {'date': '2017/03/02', 'domain': 'spotify.com', 'event': 'subscribe' }`
+
+`POST 'http://localhost:8081/summary' -d {'date' : '2017/03/02', 'company': 'Apple' }`
 
 
 
