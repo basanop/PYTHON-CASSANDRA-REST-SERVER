@@ -1,7 +1,7 @@
 # REST API server
 ## Description
 
-This project provides python based REST API server to host certain queries for the database. It uses Cassandra as db-backend and REDIS for key-value storage. This is intended for big data queries.
+This project implements a python based REST API server. It uses Cassandra as db-backend and REDIS for key-value storage. This is intended for big data queries.
 
 This project is under progress and APIs provided are work in progress and subject to changes.
 
@@ -14,6 +14,7 @@ To install python dependencies, please run:
 Make sure you run Cassandra and redis in background.
 
 ## Usage
+
 ###Load the data
 Run the following command to load the data
 ```
@@ -30,12 +31,13 @@ python main.py
 This hosts an API server on port 8081.
 
 ## API Endpoints
-> /user
-> /users
-> /counts
-> /activity
-> /subscribe
-> /summary
+
+* /user
+* /users
+* /counts
+* /activity
+* /subscribe
+* /summary
 
 
 
